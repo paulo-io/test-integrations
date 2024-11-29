@@ -64,6 +64,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: tKZTf6truzrCtKYFBKKSDy/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: IYTVsFgjv2T5/css
 
+import Ellipse1Icon from "./icons/PlasmicIcon__Ellipse1"; // plasmic-import: pCXmW_cji6Vq/icon
+import CalendarIcon from "./icons/PlasmicIcon__Calendar"; // plasmic-import: g2Rkt1Q7VikY/icon
+
 createPlasmicElementProxy;
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -79,7 +82,12 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   section?: Flex__<"section">;
   h1?: Flex__<"h1">;
-  text?: Flex__<"div">;
+  hoverCard?: Flex__<"div">;
+  frame7?: Flex__<"div">;
+  frame2?: Flex__<"div">;
+  hoverCard2?: Flex__<"div">;
+  frame8?: Flex__<"div">;
+  frame3?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -162,15 +170,13 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.h1
               )}
             >
-              {"Welcome Paulo to your first page."}
+              {"Welcome to your first page."}
             </h1>
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__yIcso
               )}
             >
               <React.Fragment>
@@ -193,6 +199,128 @@ function PlasmicHomepage__RenderFunc(props: {
               </React.Fragment>
             </div>
           </section>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"hoverCard"}
+            data-plasmic-override={overrides.hoverCard}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.hoverCard)}
+          >
+            <Ellipse1Icon
+              className={classNames(projectcss.all, sty.svg__wsld)}
+              role={"img"}
+            />
+
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame7"}
+              data-plasmic-override={overrides.frame7}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame7)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vScu2
+                )}
+              >
+                {"@nextjs"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___6Vxbd
+                )}
+              >
+                {"The React Framework - created and maintained by @vercel"}
+              </div>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"frame2"}
+                data-plasmic-override={overrides.frame2}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.frame2)}
+              >
+                <CalendarIcon
+                  className={classNames(projectcss.all, sty.svg__ud9Gr)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___29Uv
+                  )}
+                >
+                  {"Joined December 2021"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"hoverCard2"}
+            data-plasmic-override={overrides.hoverCard2}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.hoverCard2)}
+          >
+            <Ellipse1Icon
+              className={classNames(projectcss.all, sty.svg__khJ11)}
+              role={"img"}
+            />
+
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame8"}
+              data-plasmic-override={overrides.frame8}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame8)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__j4XZn
+                )}
+              >
+                {"@nextjs"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___85Svc
+                )}
+              >
+                {"Esse \u00e9 um texto para o \nLuiz"}
+              </div>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"frame3"}
+                data-plasmic-override={overrides.frame3}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.frame3)}
+              >
+                <CalendarIcon
+                  className={classNames(projectcss.all, sty.svg__mLq3B)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__sbscg
+                  )}
+                >
+                  {"Joined December 2021"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
         </div>
       </div>
     </React.Fragment>
@@ -200,10 +328,25 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "text"],
-  section: ["section", "h1", "text"],
+  root: [
+    "root",
+    "section",
+    "h1",
+    "hoverCard",
+    "frame7",
+    "frame2",
+    "hoverCard2",
+    "frame8",
+    "frame3"
+  ],
+  section: ["section", "h1"],
   h1: ["h1"],
-  text: ["text"]
+  hoverCard: ["hoverCard", "frame7", "frame2"],
+  frame7: ["frame7", "frame2"],
+  frame2: ["frame2"],
+  hoverCard2: ["hoverCard2", "frame8", "frame3"],
+  frame8: ["frame8", "frame3"],
+  frame3: ["frame3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -212,7 +355,12 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   h1: "h1";
-  text: "div";
+  hoverCard: "div";
+  frame7: "div";
+  frame2: "div";
+  hoverCard2: "div";
+  frame8: "div";
+  frame3: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -277,7 +425,12 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
+    hoverCard: makeNodeComponent("hoverCard"),
+    frame7: makeNodeComponent("frame7"),
+    frame2: makeNodeComponent("frame2"),
+    hoverCard2: makeNodeComponent("hoverCard2"),
+    frame8: makeNodeComponent("frame8"),
+    frame3: makeNodeComponent("frame3"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

@@ -43,8 +43,40 @@
           "path": "/"
         }
       ],
-      "icons": [],
-      "images": [],
+      "icons": [
+        {
+          "id": "QnQZ87JcCLYD",
+          "name": "BackgroundIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Background.tsx"
+        },
+        {
+          "id": "bFcHx31NxHIS",
+          "name": "ArrowIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Arrow.tsx"
+        },
+        {
+          "id": "VgAYoTPVqGL4",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "pCXmW_cji6Vq",
+          "name": "Ellipse1Icon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Ellipse1.tsx"
+        },
+        {
+          "id": "g2Rkt1Q7VikY",
+          "name": "CalendarIcon",
+          "moduleFilePath": "plasmic/website_starter/icons/PlasmicIcon__Calendar.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "1Gosbxkl_mJ2",
+          "name": "04",
+          "filePath": "../public/plasmic/website_starter/images/_04.png"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
